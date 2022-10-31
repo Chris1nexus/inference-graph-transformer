@@ -12,4 +12,7 @@ tqdm
 scipy
 imageio
 easydict
-openslide
+openslide-python
+torch-scatter
+torch-sparse
+torch-geometric

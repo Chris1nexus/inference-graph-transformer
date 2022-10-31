@@ -1,0 +1,15 @@
+streamlit
+torch
+torchvision
+einops
+streamlit-option-menu
+numpy
+pandas
+scikit-image
+opencv-python
+PyYAML
+tqdm
+scipy
+imageio
+easydict
+openslide

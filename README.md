@@ -1,6 +1,10 @@
 # Inference ready graph-transformer for whole slide image classification
 
 Adapted from the work published in *IEEE Transactions on Medical Imaging* (https://doi.org/10.1109/TMI.2022.3176598).
+This project showcases the inference capabilities of transformer-based models for healthcare applications.
+It has been adapted and developed during the Transformer hackaton @ LabLab.Ai<p align=“right”>
+<img src="https://github.com/Chris1nexus/infercence-graph-transformer/blob/master/figures/lablab-logo.png" width=“80%” height=“80%”>
+</p> 
 
 # Introduction
 This repository contains a PyTorch implementation of a deep learning based graph-transformer for whole slide image (WSI) classification. The original authors proposed a Graph-Transformer (GT) network that fuses a graph representation of a WSI and a transformer that can generate WSI-level predictions in a computationally efficient fashion.

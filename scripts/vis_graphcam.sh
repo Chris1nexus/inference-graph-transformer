@@ -13,8 +13,8 @@
 #--dataset_metadata_path '../../dataset_splits'
 
 python3 src/vis_graphcam.py \
---path_file ../../{DATASET_SPLITS_DIR}/test_set.txt \
---path_patches ../../${PATCHES_TRAIN_DIR} \
---path_WSI ../../${DATASET_DIR} \
---path_graph ../../${MODEL_TMP_DIR}/graphs/simclr_files \
---dataset_metadata_path ../../${DATASET_SPLITS_DIR}
+--path_file {DATASET_SPLITS_DIR}/test_set.txt \
+--path_patches ${PATCHES_TRAIN_DIR} \
+--path_WSI ${DATASET_DIR} \
+--path_graph ${MODEL_TMP_DIR}/graphs/simclr_files \
+--dataset_metadata_path ${DATASET_SPLITS_DIR}

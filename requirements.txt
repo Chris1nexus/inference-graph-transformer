@@ -16,3 +16,4 @@ openslide-python
 torch-scatter
 torch-sparse
 torch-geometric
+pydicom

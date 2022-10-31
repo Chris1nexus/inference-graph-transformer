@@ -29,9 +29,9 @@ torch.backends.cudnn.deterministic = True
 
 data_path = args.data_path
 model_path = args.model_path
-if not os.path.isdir(model_path): os.mkdir(model_path)
+if not os.path.isdir(model_path): os.makedirs(model_path, exist_ok=True)
 log_path = args.log_path
-if not os.path.isdir(log_path): os.mkdir(log_path)
+if not os.path.isdir(log_path): os.makedirs(log_path, exist_ok=True)
 task_name = args.task_name
 
 print(task_name)
@@ -83,7 +83,7 @@ criterion = nn.CrossEntropyLoss()
 if not test:
     writer = SummaryWriter(log_dir=log_path + task_name)
     f_log = open(log_path + task_name + ".log", 'w')
-
+print(n_class)
 trainer = Trainer(n_class)
 evaluator = Evaluator(n_class)
 

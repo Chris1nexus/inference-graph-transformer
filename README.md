@@ -3,14 +3,14 @@
 Adapted from the work published in *IEEE Transactions on Medical Imaging* (https://doi.org/10.1109/TMI.2022.3176598).
 This project showcases the inference capabilities of transformer-based models for healthcare applications.
 It has been adapted and developed during the Transformer hackaton @ LabLab.Ai<p align=“right”>
-<img src="https://github.com/Chris1nexus/infercence-graph-transformer/blob/master/figures/lablab-logo.png" width=“80%” height=“80%”>
+<img src="https://raw.githubusercontent.com/Chris1nexus/inference-graph-transformer/master/figures/lablab-logo.png" width=“80%” height=“80%”>
 </p> 
 
 # Introduction
 This repository contains a PyTorch implementation of a deep learning based graph-transformer for whole slide image (WSI) classification. The original authors proposed a Graph-Transformer (GT) network that fuses a graph representation of a WSI and a transformer that can generate WSI-level predictions in a computationally efficient fashion.
 
 <p align="center">
-<img src="https://github.com/vkola-lab/graphCAM/blob/main/figures/framework.jpg" width="80%" height="80%">
+<img src="https://raw.githubusercontent.com/Chris1nexus/inference-graph-transformer/master/figures/framework.jpg" width="80%" height="80%">
 </p>
 This adaptation works on the freely available dataset TCGA. 
 The model has been developed considering as primary site the Lungs, for which the available cancer subtypes are LUSC and LUAD.
@@ -53,7 +53,7 @@ Finally, after all training steps are completed, inference can be tested with th
 # Detailed pipeline: step by step
 ## 1. Graph Construction
 <p align="center">
-<img src="https://github.com/vkola-lab/graphCAM/blob/main/figures/fig_b.JPG" width="70%" height="70%">
+<img src="https://raw.githubusercontent.com/Chris1nexus/inference-graph-transformer/master/figures/fig_b.JPG" width="70%" height="70%">
 </p>
 
 ### (a) Tiling Patch 
@@ -109,7 +109,7 @@ Note: Currently we only support generating GraphCAM for one WSI at each time.
 
 More GraphCAM examples:
 <p align="center">
-<img src="https://github.com/vkola-lab/graphCAM/blob/main/figures/GraphCAM_example2.PNG" width="80%" height="80%">
+<img src="https://raw.githubusercontent.com/Chris1nexus/inference-graph-transformer/master/figures/GraphCAM_example2.PNG" width="80%" height="80%">
 </p>
 
 GraphCAMs generated on WSIs across the runs performed via 5-fold cross validation are shown above. The same set of WSI regions are highlighted by our method across the various  cross-validation folds, thus indicating consistency of our technique in highlighting salient regions of interest. 

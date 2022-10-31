@@ -16,7 +16,7 @@ The provided notebook allows creation of datasets of **equally sized WSI slide s
 
 
 # Usage
-## Environment setup
+## 1 Environment setup
 Start by setting the environment variables by running:
 ```bash
 source ./set_env.sh
@@ -28,6 +28,7 @@ Then, download the required datasets, the gdc tool and the main pip dependencies
 ./download_dataset_manifest.sh
 ./run_setup.sh
 ```
+## 2 Easy training
 At this point, the whole training pipeline can be run by means of:
 ```bash
 ./run_train_pipeline.sh
@@ -37,7 +38,9 @@ The above is composed of four main steps:
 2. training of the patch feature extractor
 3. extraction of the graph of each patch obtained in step(1.) for a given slide, by means of the trained feature extractor
 4. training and testing of the Graph Transformer
+ 
 
+## 3 Easy testing
 Finally, after all training steps are completed, inference can be tested with the streamlit.py demo:
 ```bash
 ./run_streamlit.sh
